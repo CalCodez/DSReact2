@@ -93,40 +93,16 @@ export const data = [
 	},
 ];
 
-export const getNames = data.map((nameElm) => {
-	return nameElm.name;
-});
-
-export const getNickNames = data.map((nickName) => {
-	if (nickName != null) {
-		return nickName.nickName;
-	}
-});
-
-export const images = data.map((image) => {
-	return image.imageUrl;
-});
-export const backGround = data.map((backgrounds) => {
-	return backgrounds.background;
-});
-
 export class CharacterCard extends Component {
 	render() {
-		this.name = getNames;
-		this.nickName = getNickNames;
-		this.images = images;
-		this.backGround = backGround;
 		return (
-			<div className='card'>
+			<div className='card cards' key={this.props.name}>
 				<div className='card-titles'>
-					<h3>{name[0]}</h3>
-					<h4>{getNickNames[0]}</h4>
+					<h3>{this.props.name}</h3>
+					<h4>{this.props.nickName}</h4>
 				</div>
-				<img
-					src='https://www.giantbomb.com/a/uploads/original/1/19821/694167-armstrong.jpg'
-					alt=''
-				/>
-				<p>{backGround[0]}</p>
+				<img src={this.props.imageUrl} alt={this.props.name} />
+				<p>{this.props.background}</p>
 			</div>
 		);
 	}
