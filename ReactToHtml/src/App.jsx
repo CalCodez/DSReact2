@@ -33,11 +33,6 @@ function App() {
 						</p>
 					</div>*/}
 					<CharacterCard />
-					<CharacterCard />
-					<CharacterCard />
-					<CharacterCard />
-					<CharacterCard />
-					<CharacterCard />
 				</section>
 			</body>
 		</>
