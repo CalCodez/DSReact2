@@ -1,5 +1,6 @@
 import {Component} from "react";
 import "./css/character-cards.css";
+import "./css/character-ratings.css";
 
 export const data = [
 	{
@@ -93,6 +94,20 @@ export const data = [
 	},
 ];
 
+//** Character Ratings Function Component */
+export function ChracterRating({dataRatings, isSecond}) {
+	return (
+		<tr
+			className={`dataRatings ${isSecond ? "dark" : "light"}`}
+			key={dataRatings.name}>
+			<td>{dataRatings.name}</td>
+			<td>{dataRatings.skillset}</td>
+			<td>{dataRatings.votes}</td>
+		</tr>
+	);
+}
+
+//``Character Card Class Component
 export class CharacterCard extends Component {
 	render() {
 		return (
@@ -106,14 +121,4 @@ export class CharacterCard extends Component {
 			</div>
 		);
 	}
-}
-
-export function ChracterRating({data, isSecond}) {
-	return (
-		<tr className={`data ${isSecond ? "dark" : "light"}`} key={data.name}>
-			<td>{data.name}</td>
-			<td>{data.skillset}</td>
-			<td>{data.votes}</td>
-		</tr>
-	);
 }

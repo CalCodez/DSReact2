@@ -1,11 +1,11 @@
-//import "./css/character-cards.css";
 import "./css/style_reset.css";
 import "./css/header.css";
-import "./css/character-ratings.css";
-import {ChracterRating, data} from "./fma-data";
-import {CharacterCard} from "./fma-data";
+import {data} from "./assignment_data";
+import {ChracterRating} from "./assignment_data";
+import {CharacterCard} from "./assignment_data";
 
 const [card1, card2, card3, card4, card5, card6, card7, card8, card9] = data;
+const dataRatings = [card2, card3, card6, card1, card5];
 const cards = [card1, card2, card3, card4, card5, card6, card7, card8, card9];
 function App() {
 	return (
@@ -26,11 +26,16 @@ function App() {
 						<th>Skillset</th>
 						<th>Votes</th>
 					</tr>
-					{data.map((data, dataIndex) => {
-						const adjustedIndex = dataIndex + 1;
+					{dataRatings.map((dataRatings, dataIndex) => {
+						const adjustedIndex = dataIndex + 0;
 						const isSecond = adjustedIndex % 2 === 0;
+
 						return (
-							<ChracterRating data={data} key={data.name} isSecond={isSecond} />
+							<ChracterRating
+								dataRatings={dataRatings}
+								key={dataRatings.name}
+								isSecond={isSecond}
+							/>
 						);
 					})}
 				</table>
