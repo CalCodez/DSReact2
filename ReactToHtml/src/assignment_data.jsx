@@ -94,15 +94,15 @@ export const data = [
 	},
 ];
 
-//** Character Ratings Function Component */
-export function ChracterRating({dataRatings, isSecond}) {
+//** Character Ratings Functional Component */
+export function ChracterRating({props, oddRowDark}) {
 	return (
 		<tr
-			className={`dataRatings ${isSecond ? "dark" : "light"}`}
-			key={dataRatings.name}>
-			<td>{dataRatings.name}</td>
-			<td>{dataRatings.skillset}</td>
-			<td>{dataRatings.votes}</td>
+			className={`props=${`dataRatings`} ${oddRowDark ? "dark" : "light"}`}
+			key={props.name}>
+			<td>{props.name}</td>
+			<td>{props.skillset}</td>
+			<td>{props.votes}</td>
 		</tr>
 	);
 }

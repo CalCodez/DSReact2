@@ -18,6 +18,7 @@ function App() {
 					<li>support us</li>
 				</nav>
 			</header>
+			{/* Character Rathings Section */}
 			<section id='character-ratings'>
 				<h4>Top Characters</h4>
 				<table>
@@ -26,21 +27,23 @@ function App() {
 						<th>Skillset</th>
 						<th>Votes</th>
 					</tr>
-					{dataRatings.map((dataRatings, dataIndex) => {
-						const adjustedIndex = dataIndex + 0;
-						const isSecond = adjustedIndex % 2 === 0;
 
+					{/* Render Character Section  */}
+					{dataRatings.map((props, dataIndex) => {
+						const adjustedIndex = dataIndex + 0;
+						const oddRowDark = adjustedIndex % 2 === 0;
 						return (
 							<ChracterRating
-								dataRatings={dataRatings}
-								key={dataRatings.name}
-								isSecond={isSecond}
+								props={props}
+								key={props.name}
+								oddRowDark={oddRowDark}
 							/>
 						);
 					})}
 				</table>
 			</section>
 
+			{/* Render Character Cards */}
 			<section id='character-cards'>
 				{cards.map((card, index) => (
 					<CharacterCard
