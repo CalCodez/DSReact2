@@ -107,3 +107,13 @@ export class CharacterCard extends Component {
 		);
 	}
 }
+
+export function ChracterRating({data, isSecond}) {
+	return (
+		<tr className={`data ${isSecond ? "dark" : "light"}`} key={data.name}>
+			<td>{data.name}</td>
+			<td>{data.skillset}</td>
+			<td>{data.votes}</td>
+		</tr>
+	);
+}
