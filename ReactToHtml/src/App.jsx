@@ -45,13 +45,13 @@ function App() {
 
 			{/* Render Character Cards */}
 			<section id='character-cards'>
-				{cards.map((card, index) => (
+				{cards.map((props, index) => (
 					<CharacterCard
 						key={index}
-						name={card.name}
-						nickName={card.nickName}
-						img={card.imageUrl}
-						background={card.background}
+						name={props.name}
+						nickName={props.nickName}
+						imageUrl={props.imageUrl}
+						background={props.background}
 					/>
 				))}
 			</section>
