@@ -2,7 +2,7 @@ export const data = [
 	{
 		name: 'Alex Louis Armstrong',
 		nickName: 'Major Armstrong',
-		skillset: ['Flawless Bodybuilding', 'Stone Alchemy'],
+		skillset: ['Flawless Bodybuilding', ' Stone Alchemy'],
 		votes: 90,
 		background:
 			"Major Armstrong may look big and strong, but deep down he's the biggest sap in the entire show",
@@ -22,7 +22,7 @@ export const data = [
 	{
 		name: 'Edward Elrich',
 		nickName: 'The Fullmetal Alchemist',
-		skillset: ['Human Transmutation', 'Alchemy', 'Being Short'],
+		skillset: ['Human Transmutation', ' Alchemy', ' Being Short'],
 		votes: 109,
 		background:
 			"Edward is a master alchemist and our main character... just don't call him short",
@@ -33,7 +33,7 @@ export const data = [
 		name: 'Greed',
 		nickName: 'Greed',
 		votes: 45,
-		skillset: ['Skin Hardening', 'Homunculii'],
+		skillset: ['Skin Hardening', ' Homunculii'],
 		imageUrl:
 			'https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/greed-fullmetal-alchemist.jpg',
 		background:
@@ -42,7 +42,7 @@ export const data = [
 	{
 		name: 'Nina Tucker',
 		nickName: null,
-		skillset: ['Being Adorable', 'Combining...'],
+		skillset: ['Being Adorable', ' Combining...'],
 		votes: 80,
 		imageUrl:
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dK-tXCnVxbSeSJuCKmiX0zUbnCEV1ss54DeOYgXUHSE0WB23TAUD4a3itwFbzJ9fkg&usqp=CAU',
@@ -52,7 +52,7 @@ export const data = [
 	{
 		name: 'Riza Hawkeye',
 		nickName: 'Hawkeye',
-		skillset: ['Loyal AF', 'Sniper'],
+		skillset: ['Loyal AF', ' Sniper'],
 		votes: 95,
 		background:
 			"Hawkeye is Colonel Mustang's loyal assistant, and one of the strongest non-alchemist characters in the show",
@@ -63,7 +63,7 @@ export const data = [
 		name: 'Solf J. Kimblee',
 		nickName: 'The Crimson Alchemist',
 		votes: -9000,
-		skillset: ['Being a piece of sh*t', 'Alchemy'],
+		skillset: ['Being a piece of sh*t', ' Alchemy'],
 		background: "Kimblee suckkkkkssss, seriously he's not very nice",
 		imageUrl:
 			'https://i0.wp.com/news.qoo-app.com/en/wp-content/uploads/sites/3/2022/03/full-metal-alchemist-mobile-char-2.jpg?resize=640%2C457&ssl=1',
@@ -72,7 +72,7 @@ export const data = [
 		name: 'Tim Marcoh',
 		nickName: 'Dr. Marcoh',
 		votes: 40,
-		skillset: ['Healing Alchemy', 'Making Philospher Stones'],
+		skillset: ['Healing Alchemy', ' Making Philospher Stones'],
 		background:
 			'Dr. Marcoh did some F**ked up S**t in the war on ishval, but his redemption arc is strong',
 		imageUrl:
@@ -82,7 +82,7 @@ export const data = [
 		name: 'Winrey Rockbell',
 		nickName: null,
 		votes: 93,
-		skillset: ['Automail Expert', 'Delivering Babies'],
+		skillset: ['Automail Expert', ' Delivering Babies'],
 		background:
 			"Winrey is Edward and Al's best friend, and it's a good thing because her specialty is making the best automail out there",
 		imageUrl:
