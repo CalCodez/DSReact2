@@ -8,7 +8,7 @@ export class CharacterCard extends Component {
 		return (
 			<section id='character-cards'>
 				{characterData.map((card, index) => (
-					<div className='card' key={card.name}>
+					<div className='card' key={card.id || index}>
 						<div className='card-titles'>
 							<h3>{card.name}</h3>
 							<h4>{card.nickName}</h4>

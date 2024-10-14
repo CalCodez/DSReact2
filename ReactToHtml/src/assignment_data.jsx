@@ -1,7 +1,3 @@
-//import { Component } from 'react';
-//import './css/character-cards.css';
-//import './css/character-ratings.css';
-
 export const data = [
 	{
 		name: 'Alex Louis Armstrong',
