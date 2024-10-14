@@ -1,5 +1,5 @@
 import '../css/header.css';
-function Header() {
+const Header = () => {
 	return (
 		<header>
 			<h1>Fullmetal Alchemist</h1>
@@ -10,6 +10,6 @@ function Header() {
 			</nav>
 		</header>
 	);
-}
+};
 
 export { Header };

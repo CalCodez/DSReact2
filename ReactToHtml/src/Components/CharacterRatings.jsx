@@ -3,7 +3,7 @@
 import '../css/character-ratings.css';
 import { data as characterData } from '../assignment_data';
 
-export function CharacterRating() {
+const CharacterRating = () => {
 	return (
 		<section id='character-ratings'>
 			<h4>Top Characters</h4>
@@ -12,7 +12,6 @@ export function CharacterRating() {
 				<th>Skillset</th>
 				<th>Votes</th>
 				{characterData.map((character, index) => {
-					//const adjustedIndex = index + 0;
 					const oddRowDark = index % 2 === 0;
 					return (
 						<tr
@@ -29,4 +28,6 @@ export function CharacterRating() {
 			</table>
 		</section>
 	);
-}
+};
+
+export { CharacterRating };
